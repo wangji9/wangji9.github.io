@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -28,7 +28,7 @@ jobs:
           cache: npm
 
       - name: Install
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Build (static export)
         run: npm run build:pages
