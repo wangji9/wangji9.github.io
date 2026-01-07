@@ -27,8 +27,19 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: Versions
+        run: |
+          node --version
+          npm --version
+          npm config get strict-peer-deps
+
       - name: Install
-        run: npm ci --legacy-peer-deps
+        run: npm ci --legacy-peer-deps --no-audit --no-fund
+
+      - name: Verify lockfile state
+        run: |
+          node -p "require('./package-lock.json').lockfileVersion"
+          npm ls better-auth drizzle-kit --depth=0 || true
 
       - name: Build (static export)
         run: npm run build:pages
