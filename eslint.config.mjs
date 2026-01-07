@@ -7,8 +7,15 @@ import nextPlugin from "@next/eslint-plugin-next";
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
-  { ignores: [".next/**", "out/**", "node_modules/**"] },
-
+  {
+    ignores: [
+      "node_modules/**",
+      ".next/**",
+      "out/**",
+      ".deploy-gh-pages/**",
+      "next-env.d.ts",
+    ],
+  },
   js.configs.recommended,
 
   ...tseslint.configs.recommended,

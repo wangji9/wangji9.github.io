@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["master"]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -24,21 +24,15 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: 20
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
+      # Repo is a user site (wangji9.github.io), so basePath should be empty.
       - name: Build (static export)
-        env:
-          # Ensure Next.js doesn't try to treat this as a project page.
-          NEXT_PUBLIC_BASE_PATH: ""
         run: npm run build
-
-      - name: Add .nojekyll
-        run: |
-          touch out/.nojekyll
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -49,12 +43,12 @@ jobs:
           path: ./out
 
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
     steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

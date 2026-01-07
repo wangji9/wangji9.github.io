@@ -5,8 +5,9 @@
     "scripts": {
         "dev": "next dev --turbopack",
         "build": "next build",
-            "build:pages": "set GITHUB_PAGES=true&& next build",
+        "build:project": "set PROJECT_BASE_PATH=/wangji9&& next build",
         "start": "next start",
+        "deploy": "echo Use GitHub Actions for deployment (see .github/workflows/deploy.yml)",
         "lint": "eslint . --max-warnings=0"
     },
     "dependencies": {
