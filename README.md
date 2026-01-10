@@ -1,8 +1,7 @@
 # wangji9.github.io
 
-这是一个使用 **Next.js (App Router)** 的静态站点（`output: 'export'`），通过 **GitHub Actions** 自动部署到 **GitHub Pages**。
 
-## 本地开发（与线上效果一致）
+## 本地开发
 
 > 注意：线上是静态导出（`out/`），本地开发用 `next dev`（热更新）。页面内容/样式应一致。
 
@@ -21,7 +20,7 @@ npm run build
 
 构建完成后会生成 `out/`，这就是 GitHub Pages 实际部署的内容。
 
-## GitHub Pages 部署（推荐：GitHub Actions）
+## GitHub Pages 部署
 
 仓库已包含工作流：`.github/workflows/deploy.yml`。
 
