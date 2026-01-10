@@ -306,6 +306,21 @@ export default function Home() {
           {/* Hero section */}
           <div className="space-y-4">
             <div id="about" className="space-y-3 text-[15px] leading-relaxed text-zinc-700">
+              <div className="space-y-2">
+                <div className="relative w-full overflow-hidden rounded-lg border border-zinc-200 bg-zinc-50 shadow-sm">
+                  <Image
+                    src="/view.png"
+                    alt="View"
+                    width={1400}
+                    height={300}
+                    className="w-full h-full"
+                    priority
+                  />
+                </div>
+                <p className="text-sm text-zinc-500 italic">
+                  “You will always know more than you can say.”
+                </p>
+              </div>
               <p>
                 Hi, I am a{" "}
     <span className="font-medium text-zinc-900">PhD student</span> at{" "}
