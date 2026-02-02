@@ -60,6 +60,8 @@ export interface NewsItem {
 };
 
 export const news: NewsItem[] = [
+  { id: "news-13", date: "2026.02", content: "Published 'Parsing and Prioritizing users’ evolving requirements with Large Language Models: A case study in personalized rehabilitation assistive devices design' in Computers & Industrial Engineering." },
+  { id: "news-12", date: "2026.02", content: "Published 'Explicating Visual Tacit Knowledge in Industrial Welding Inspection with Context-Aware Cognitive Pathway Graph' in Journal of manufacturing systems." },
   { id: "news-11", date: "2026.01", content: "Co-founded Wavefrag Studio, building acoustic acquisition & imaging products and related algorithm software (wavefrag.com)." },
   { id: "news-10", date: "2024.05", content: "Joined Shanghai Nanyang Hongyou Intelligent Technology as an AI Engineer." },
   { id: "news-9", date: "2023.07", content: "Joined Chongqing Aoxiong Online Information Technology as an Algorithm Intern Engineer." },
@@ -74,6 +76,62 @@ export const news: NewsItem[] = [
 ];
 
 export const publications: Publication[] = [
+  {
+    id: "pub-10",
+    title: "Parsing and Prioritizing users’ evolving requirements with Large Language Models: A case study in personalized rehabilitation assistive devices design",
+    authors: "Weibin Zhuang, Ji Wang, Xing Wu, Congmao Chen, Wenjie Xiao, Cong Jiang, Jie Yao, Jinsong Bao, Xinyu Li",
+    journal: "Computers & Industrial Engineering",
+    year: 2026,
+    highlight: true,
+    link: "#",
+    image: "/CAIE.png",
+    abstract: `Rehabilitation is a staged and continuously evolving process, in which user requirements change across 
+different recovery phases, posing challenges for parsing and prioritizing requirements in the design of rehabilitation assistive 
+devices. Static requirement analysis methods fail to capture this evolving nature and often lead to mismatches between product 
+functions and users’ real-time requirements. To address this, we propose an approach that employs large language models to 
+parse and prioritize users’ evolving requirements for personalized rehabilitation assistive device design. First, a quantitative 
+method integrating the importance weight and sentiment score of product attribute is proposed to identify directional shifts in 
+attribute importance, providing data support for large language models to dynamically parse user requirements. Second, 
+leveraging a rehabilitation device design knowledge graph, a dual-exploration reasoning chain is constructed for large 
+language models, which, when combined with attribute importance trends, progressively parses user requirements into design 
+requirements and dynamically updates their content as the trends evolve. Finally, a requirement evaluation method, grounded 
+in complex network theory and employing a large language model-based multi-agent, is proposed to quantify the global 
+influence of design requirements and support their adaptive prioritization. The proposed approach is validated using a 
+longitudinal knee brace case spanning the acute, recovery, and consolidation stages. The results demonstrate that users’ 
+evolving requirements can be effectively parsed and their prioritization reasonably determined. The results demonstrate that 
+our proposed approach can effectively parse users’ evolving requirements and reasonably determine their prioritization.`,
+    ranking: ["中科院2区", "Q1", "TOP", "IF 6.5"]
+  },
+  {
+    id: "pub-9",
+    title: "Explicating Visual Tacit Knowledge in Industrial Welding Inspection with Context-Aware Cognitive Pathway Graph",
+    authors: "Ji Wang, Weibin Zhuang, Xing Wu, Congmao Chen, Jinsong Bao, Xinyu Li",
+    journal: "Journal of Manufacturing Systems",
+    year: 2026,
+    highlight: true,
+    link: "#",
+    image: "/JMS.png",
+    abstract: `The profound reliance of industrial smart manufacturing on human expert experience
+has emerged as a critical bottleneck, as traditional methods struggle to effectively
+computationalize the deep, contextualized tacit knowledge inherent in expert visual
+intuition. To address this challenge, this paper proposes a systematic methodology for
+the explicitation and contextualized modeling of expert Visual Tacit Knowledge. First, to
+address the foundational challenge of formalizing expert intuition, this work defines
+Visual Tacit Knowledge and its transformation pathway from tacit intuition to explicit
+rules, and introduces Weld-VTK, a multimodal dataset for welding inspection that
+provides a solid data foundation. Second, an explicit analysis method is proposed to
+distill structured attention cues from unstructured raw visual behavior, providing the
+critical structured input needed for establishing contextual associations. Finally, to
+model the expert's cognitive process, a Visual Chain-of-Thought is introduced,
+leveraging Large Language Models to establish contextual semantic associations
+between cues. These chains are then aggregated to construct a hierarchical Context
+Aware Cognitive Pathway Graph, completely reconstructing the expert's cognitive
+strategy. Quantitative results demonstrate that the proposed method outperforms
+baseline models, and expert evaluations confirm its exceptional performance in causal
+validity and diagnostic precision. This methodology provides a new paradigm for the
+contextualized modeling and structured explicitation of expert Visual Tacit Knowledge.`,
+    ranking: ["中科院1区", "Q1", "TOP", "IF 14.2"]
+  },
   {
     id: "pub-8",
     title: "Analysis of causes of welding defects in bridge weathering steel based on large language models",
@@ -137,7 +195,7 @@ export const publications: Publication[] = [
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/00601f25-80c7-4552-a858-00fca7a46999/image-1767754823583.png?width=8000&height=8000&resize=contain",
     abstract: "Steel surface defect detection is crucial for quality control in the steel industry. This paper proposes DAssd-Net, a lightweight steel surface defect detection model. The model features a multi-branch dilated convolution aggregation module to capture multi-scale context information and a multi-domain perception detection head to improve the localization of various types of defects. The model is designed to be computationally efficient while maintaining high detection accuracy, enabling real-time inspection on industrial production lines.",
     citations: 21,
-      ranking: ["中科院三区", "Q2", "IF 3.5"]
+      ranking: ["中科院3区", "Q2", "IF 3.5"]
     },
     {
       id: "pub-5",
@@ -150,7 +208,7 @@ export const publications: Publication[] = [
       image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/00601f25-80c7-4552-a858-00fca7a46999/image-1767754762056.png?width=8000&height=8000&resize=contain",
       abstract: "Welding robots are widely used in modern manufacturing. This paper provides a comprehensive review of visual sensing and depth perception technologies for welding robots. We discuss various sensing techniques, including structured light, stereo vision, and time-of-flight sensors, and their applications in weld seam tracking, pool monitoring, and defect inspection. We also highlight current challenges and future research directions in the field of intelligent welding robotics.",
       citations: 23,
-      ranking: ["中科院三区", "Q2", "IF 3.5"]
+      ranking: ["中科院3区", "Q2", "IF 3.5"]
     },
     {
       id: "pub-2",
@@ -163,7 +221,7 @@ export const publications: Publication[] = [
       image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/00601f25-80c7-4552-a858-00fca7a46999/image-1767754864619.png?width=8000&height=8000&resize=contain",
       abstract: "Periodic inspection of weld seam quality is important for assessing equipment reliability. To save labor costs and improve efficiency, an autonomous navigation and inspection robot is developed. The development process involves the design of chassis damping, target detection mechanism, control system, and algorithms. For performing weld inspection in complex, outdoor, environments, an algorithm is developed for the robot to avoid any obstacles. This algorithm for planning the inspection route is based on an improved timed-elastic-band (TEB) algorithm. The developed robot is capable of conducting inspection tasks in complex and dangerous environments efficiently and autonomously.",
       citations: 10,
-      ranking: ["中科院二区", "Q2", "IF 3.9"]
+      ranking: ["中科院2区", "Q2", "IF 3.9"]
     }
 ];
 

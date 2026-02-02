@@ -327,8 +327,7 @@ export default function Home() {
     <span className="font-medium text-zinc-900">Donghua University</span>,
     majoring in Mechanical Engineering. My research interests focus on{" "}
     <span className="font-bold italic text-zinc-900">
-      industrial foundation models, industrial knowledge graphs, and the acquisition and utilization of
-      tacit industrial knowledge.
+      industrial intelligence, industrial foundation models, and tacit industrial knowledge.
     </span>{" "}
     I also co-founded{" "}
     <span className="font-medium text-zinc-900">Wavefrag Studio</span> as a
