@@ -60,6 +60,7 @@ export interface NewsItem {
 };
 
 export const news: NewsItem[] = [
+  { id: "news-14", date: "2026.04", content: "Published 'An Agentic AI-Empowered product family configuration approach for personalizing rehabilitation assistive devices with Multi-Faceted wearing experience' in Advanced Engineering Informatics." },
   { id: "news-13", date: "2026.02", content: "Published 'Parsing and Prioritizing users’ evolving requirements with Large Language Models: A case study in personalized rehabilitation assistive devices design' in Computers & Industrial Engineering." },
   { id: "news-12", date: "2026.02", content: "Published 'Explicating Visual Tacit Knowledge in Industrial Welding Inspection with Context-Aware Cognitive Pathway Graph' in Journal of manufacturing systems." },
   { id: "news-11", date: "2026.01", content: "Co-founded Wavefrag Studio, building acoustic acquisition & imaging products and related algorithm software (wavefrag.com)." },
@@ -76,6 +77,30 @@ export const news: NewsItem[] = [
 ];
 
 export const publications: Publication[] = [
+  {
+    id: "pub-11",
+    title: "An Agentic AI-Empowered product family configuration approach for personalizing rehabilitation assistive devices with Multi-Faceted wearing experience",
+    authors: "Weibin Zhuang, Xingchen Lv, Xing Wu, Congmao Chen, Wenjie Xiao, Ji Wang, Cong Jiang, Jie Yao, Jinsong Bao, Xinyu Li",
+    journal: "Advanced Engineering Informatics",
+    year: 2026,
+    highlight: true,
+    link: "#",
+    image: "/AEI.png",
+    abstract: `The growing burden of population aging and chronic diseases has driven increasing demand for personalized
+rehabilitation assistive devices, for which product-family–based configuration has become a prevalent approach.
+However, existing methods often overlook cross-faceted inconsistencies when fusing verbal reports, facial expressions, and sEMG signals,
+leading to unreliable requirement representations; meanwhile, multi-requirement conflicts under strongly coupled constraints are difficult to resolve,
+resulting in configuration solutions that deviate from users’ true requirements. To address these challenges, this study proposes an Agentic AI–driven
+product-family configuration approach based on multi-faceted wearing experiences for personalizing rehabilitation assistive devices. First, a wearing-experience
+representation model integrating language, sEMG, and facial expressions is constructed, with sEMG serving as an anchor to calibrate linguistic and facial descriptions, yielding
+complete and reliable wearing-requirement representations. Second, a configuration knowledge graph is built on the FBS—ENV—product-family framework; subsequently, an agent
+reasoning chain based on path exploration and neighborhood completion is designed to produce traceable configuration evidence. Third, a collaborative configuration framework integrating
+TRIZ principles with product-family constraints is proposed, which decomposes the customization process into five stages and employs multi-agent interactions to identify and resolve
+structure–performance conflicts induced by multiple requirements, generating executable configurations under multiple constraints. Finally, a knee rehabilitation brace case study is conducted,
+with comparisons against MetaGPT, AutoAgents, and AutoTRIZ. Ablation and comparative results demonstrate that the proposed approach derives more complete and reliable wearing-requirements
+from multi-faceted wearing experiences and generates feasible configuration solutions under multi-requirement constraints.`,
+    ranking: ["中科院1区", "Q1", "TOP", "IF 9.9"]
+  },
   {
     id: "pub-10",
     title: "Parsing and Prioritizing users’ evolving requirements with Large Language Models: A case study in personalized rehabilitation assistive devices design",
