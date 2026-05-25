@@ -272,6 +272,17 @@ const internshipProjects: Project[] = [
   },
 ];
 
+const academicExchangeProjects: Project[] = [
+  {
+    id: "proj-academic-cirp-cats-2026",
+    title: "11th CIRP Conference on Assembly and Disassembly Technologies and Systems (CIRP CATS 2026)",
+    description:
+      "CIRP CATS 2026 will be held at The Hong Kong Polytechnic University, Hong Kong SAR, China, on 28–30 April 2026, with a welcome reception on 27 April 2026. The conference theme, \"Human-Machine Symbiotic Assembly and Disassembly\", focuses on cutting-edge digitalization, AI, and robotics, bringing together academics, industry practitioners, and systems integrators to share research and insights shaping next-generation manufacturing.",
+    image: "/CIRP_CATS.jpg",
+    tags: ["Academic Exchange", "Conference", "CIRP CATS", "Hong Kong", "2026"],
+  },
+];
+
 const visualInspectionProjects: Project[] = [
   {
     id: "proj-2",
@@ -350,6 +361,11 @@ export const projectSections: ProjectSection[] = [
     id: "section-internship",
     title: "Internship Projects",
     projects: internshipProjects,
+  },
+  {
+    id: "section-academic-exchange",
+    title: "Academic Exchange",
+    projects: academicExchangeProjects,
   },
 ];
 
